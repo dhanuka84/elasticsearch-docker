@@ -2,7 +2,7 @@ SHELL = /bin/bash
 ELASTIC_VERSION := $(shell ./bin/elastic-version)
 
 TEDI_DEBUG ?= false
-TEDI_VERSION ?= 0.7
+TEDI_VERSION ?= 0.8
 TEDI ?= docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v $(PWD):/mnt \
